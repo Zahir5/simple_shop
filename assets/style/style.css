@@ -219,6 +219,59 @@ h6 {
   color: #ff3c78;
 }
 
+/* //........ seller  ........// */
+.seller h2 {
+  margin-top: 65px;
+  margin-bottom: 20px;
+}
+.seller .best-p1 {
+  width: 250px;
+  height: 370px;
+  /* border: 2px solid black; */
+}
+.seller img {
+  height: 250px;
+  width: 250px;
+}
+.seller a:hover {
+  color: #f05e8a;
+}
+.seller .price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-seller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.best-seller .buy-now a {
+  text-decoration: none;
+  color: var(--white);
+}
+.best-seller .buy-now button {
+  padding: 10px 15px;
+  margin-top: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #f05e8a;
+  color: var(--white);
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+  border: 1px solid #f05e8a;
+  transition: 0.5s;
+}
+.best-seller .buy-now button:hover {
+  background-color: var(--white);
+  font-weight: 600;
+}
+.best-seller .buy-now button:hover a {
+  color: #f05e8a;
+}
+
 /* //........ Footer ...... // */
 footer {
   width: 100%;
