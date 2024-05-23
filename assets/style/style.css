@@ -261,13 +261,13 @@ ul li {
   flex-wrap: wrap;
   gap: 2em;
 }
-.product-container .buy-now a {
+
+.primary-btn a {
   text-decoration: none;
   color: var(--white);
 }
-.product-container .buy-now button {
+.primary-btn button {
   padding: 10px 15px;
-  margin-top: 5px;
   font-size: 14px;
   cursor: pointer;
   text-transform: uppercase;
@@ -279,11 +279,11 @@ ul li {
   border: 1px solid #f05e8a;
   transition: 0.5s;
 }
-.product-container .buy-now button:hover {
+.primary-btn button:hover {
   background-color: var(--white);
   font-weight: 600;
 }
-.product-container .buy-now button:hover a {
+.primary-btn button:hover a {
   color: #f05e8a;
 }
 
@@ -322,6 +322,61 @@ ul li {
 }
 .sidebar .filter .filter-item li {
   margin-bottom: 0.3rem;
+}
+
+/* //........ Product Description ...... // */
+.product-desc {
+  margin-top: 6rem;
+  display: flex;
+  gap: 4rem;
+}
+.product-desc .product-img {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.product-desc .product-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-desc .product-order .desc .name-of-p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.product-desc .product-order .desc .price {
+  font-size: 2.5rem;
+  color: #b02929;
+  font-weight: 400;
+}
+.product-desc .product-order .add-to-cart {
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+.product-desc .product-order .add-to-cart .counter {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.product-desc .product-order .add-to-cart .counter button {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0;
+  border: 0;
+}
+.product-desc .product-order .add-to-cart .counter input {
+  height: 2rem;
+  width: 3rem;
+  border-radius: 0;
+  text-align: center;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+.product-desc .product-order .add-to-cart .counter input::-webkit-outer-spin-button, .product-desc .product-order .add-to-cart .counter input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* //........ Footer ...... // */
