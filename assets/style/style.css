@@ -439,5 +439,9 @@ footer .f-design .f-design-txt {
   font-size: 14px;
   color: var(--grey);
 }
+footer .f-design a {
+  color: #fff;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */
