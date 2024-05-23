@@ -27,11 +27,24 @@ h6 {
   font-weight: 600;
 }
 
+ul {
+  list-style: none;
+}
+ul li {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
   padding-bottom: 2em;
+}
+
+.has-sidebar {
+  display: flex;
+  padding-top: 1rem;
+  gap: 2rem;
 }
 
 .navbar {
@@ -220,37 +233,39 @@ h6 {
 }
 
 /* //........ seller  ........// */
-.seller h2 {
+.product-wrapper h2 {
   margin-top: 65px;
   margin-bottom: 20px;
 }
-.seller .best-p1 {
+.product-wrapper .product {
   width: 250px;
   height: 370px;
   /* border: 2px solid black; */
 }
-.seller img {
+.product-wrapper img {
   height: 250px;
   width: 250px;
 }
-.seller a:hover {
+.product-wrapper a:hover {
   color: #f05e8a;
 }
-.seller .price {
+.product-wrapper .price {
   display: flex;
   justify-content: space-between;
 }
 
-.best-seller {
+.product-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
 }
-.best-seller .buy-now a {
+.product-container .buy-now a {
   text-decoration: none;
   color: var(--white);
 }
-.best-seller .buy-now button {
+.product-container .buy-now button {
   padding: 10px 15px;
   margin-top: 5px;
   font-size: 14px;
@@ -264,12 +279,49 @@ h6 {
   border: 1px solid #f05e8a;
   transition: 0.5s;
 }
-.best-seller .buy-now button:hover {
+.product-container .buy-now button:hover {
   background-color: var(--white);
   font-weight: 600;
 }
-.best-seller .buy-now button:hover a {
+.product-container .buy-now button:hover a {
   color: #f05e8a;
+}
+
+/* //........ SHOP ...... // */
+.sidebar {
+  width: 18em;
+  margin-top: 65px;
+  margin-bottom: 20px;
+  background: rgba(150, 150, 150, 0.1);
+  border-radius: 10px;
+  padding: 1rem 0em;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar h4 {
+  margin-bottom: 5px;
+  padding-left: 1rem;
+}
+.sidebar .filter {
+  margin-bottom: 1.5rem;
+}
+.sidebar .filter .filter-name {
+  background: rgba(150, 150, 150, 0.1);
+  padding-top: 2px;
+  padding-bottom: 3px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.sidebar .filter > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.sidebar .filter .filter-item {
+  padding-top: 0.5rem;
+}
+.sidebar .filter .filter-item li {
+  margin-bottom: 0.3rem;
 }
 
 /* //........ Footer ...... // */
