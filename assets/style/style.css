@@ -480,6 +480,44 @@ ul li {
   width: 100%;
 }
 
+.address {
+  background-color: #fff;
+  flex-grow: 1;
+  display: grid;
+  border-radius: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.address .field {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+  padding-left: 1rem;
+}
+.address .field label {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.address .field input {
+  font-size: 0.9rem;
+  padding: 5px;
+  border-radius: 0.4rem;
+  border-width: 1px;
+}
+.address .addr {
+  grid-row: span 3/span 3;
+}
+.address .addr textarea {
+  flex-grow: 1;
+  text-wrap: wrap;
+  line-height: 1.4;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
 /* //........ Footer ...... // */
 footer {
   width: 100%;
